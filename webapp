@@ -1,0 +1,11 @@
+Web3.js has two methods we will use to call functions on our contract.
+Call
+  call is used for view and pure functions. It only runs on the local node and wont create a transaction
+  on the block
+
+  myContract.methods.myMethod(123).call();
+
+Send
+  will create a transaction and change data on the blockchain. use it for any functions tha are not pure or view only
+
+
